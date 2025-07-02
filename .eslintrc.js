@@ -20,6 +20,7 @@ module.exports = {
     "react", "jest"
   ],
   "rules": {
+    "react/no-deprecated": "off",
     "indent": [
       "error",
         2
