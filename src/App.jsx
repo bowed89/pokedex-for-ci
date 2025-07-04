@@ -20,7 +20,6 @@ const App = () => {
   if (error) {
     return <ErrorMessage error={error} />
   }
-
   return (
     <Router>
       <Switch>
