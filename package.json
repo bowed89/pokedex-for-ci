@@ -12,7 +12,7 @@
     "build": "webpack --mode production",
     "test:e2e": "npx cypress run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -u \"github-actions[bot] <github-actions[bot]@users.noreply.github.com>\""
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
