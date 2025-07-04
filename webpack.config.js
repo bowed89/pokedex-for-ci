@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/pokedex-for-ci/', // este es el cambio clave
+    publicPath: process.env.NODE_ENV === 'production' ? '/pokedex-for-ci/' : '/',
   },
   module: {
     rules: [
