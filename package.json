@@ -10,7 +10,9 @@
     "test": "jest",
     "eslint": "eslint . --ext .js,.jsx",
     "build": "webpack --mode production",
-    "test:e2e": "npx cypress run"
+    "test:e2e": "npx cypress run",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/smartlyio/fullstackopen-cicd/issues"
   },
-  "homepage": "https://github.com/smartlyio/fullstackopen-cicd#readme",
+  "homepage": "https://bowed89.github.io/pokedex-for-ci",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-transform-runtime": "^7.10.0",
@@ -40,6 +42,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-jest": "^23.11.0",
     "eslint-plugin-react": "^7.19.0",
+    "gh-pages": "^6.3.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^25.5.4",

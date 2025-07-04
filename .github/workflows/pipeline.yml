@@ -29,3 +29,10 @@ jobs:
           command: npm run test:e2e
           start: npm run start-test
           wait-on: http://localhost:5000
+      - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          npm run deploy
