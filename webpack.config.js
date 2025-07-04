@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/pokedex-for-ci/'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -40,8 +40,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
-      filename: "./index.html",
-      inject: 'body'
+      inject: 'body',
     }),
   ],
 };
