@@ -20,7 +20,7 @@ jobs:
       - name: Lint
         run: npm run eslint
       - name: Build
-        run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+        run: npm run build
       - name: Test
         run: npm test
       - name: E2E Tests
