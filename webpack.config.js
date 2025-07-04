@@ -40,7 +40,8 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
-      inject: 'body',
+      filename: "./index.html",
+      inject: 'body'
     }),
   ],
 };
